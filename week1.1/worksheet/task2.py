@@ -18,7 +18,7 @@ try:
        print(f"You will save £{final_amount:.2f} with interest by the end of this year")
 
 except ValueError:
-       print("Please enter an integer only")
+       print("Invalid amount")
 
 
 # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
