@@ -9,6 +9,7 @@ rivers = {
 print(rivers)
 
 # Add two new entries to the rivers database
+rivers[]
 
 # Display all the keys
 
