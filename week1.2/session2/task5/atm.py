@@ -26,7 +26,7 @@ elif option == 2:
 elif option == 3:
     withdraw_amount = float(input("Enter the amount to withdraw: "))
     # Nested conditional for withdrawal
-    if  withdraw_amount < balance:
+    if  withdraw_amount <= balance:
         balance -= withdraw_amount
         print(f"You have withdrawn £{withdraw_amount:.2f}")
         print(f"Your new balance is £{balance:.2f}")
