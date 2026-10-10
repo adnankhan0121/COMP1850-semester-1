@@ -13,10 +13,10 @@ if (grade.isdecimal()):
         else:
           print(f"{grade} is a Fail")
      else:
-        print("Error: Grade must be an integer between 0 and 100")
+        print("Error: Grade must be an integer between 0 and 100", file=sys.stderr)
         sys.exit()         
           
           
 else:
-      print("Error: Grade must be an integer between 0 and 100")
+      print("Error: Grade must be an integer between 0 and 100", file=sys.stderr)
       sys.exit()

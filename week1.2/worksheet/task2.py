@@ -5,8 +5,8 @@ import util
 numbers = util.read_numbers()
 
 if len(numbers) == 0:
-    print("Error: no numbers provided")
-    sys.exit
+    print("Error: no numbers provided", file=sys.stderr)
+    sys.exit()
 
 numbers.sort()
 minimun = min(numbers)
@@ -17,7 +17,7 @@ if len(numbers) % 2 == 1:
    median = numbers[middle]
 else:
     median = (numbers[middle - 1] + numbers[middle]) / 2
-print(f"Minimum:{minimun}")
-print(f"Maximum:{maximun}")
-print(f"Mean:{mean}")
-print(f"Median:{median}")
+print(f"Minimum = {minimun}")
+print(f"Maximum = {maximun}")
+print(f"Mean = {mean}")
+print(f"Median = {median}")
