@@ -8,9 +8,9 @@ print(not_fish)
 
 
 # write the equivalent for loop to create the not_fish list from animals
-not_fish2 = []
+not_fish_2 = []
 for x in animals:
     if x != 'goldfish':
-        not_fish2.append(x)
+        not_fish_2.append(x)
 # print your result to verify it is the same
-print(not_fish2)
+print(not_fish_2)

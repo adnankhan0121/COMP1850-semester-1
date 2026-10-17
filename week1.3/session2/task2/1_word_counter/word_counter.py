@@ -15,3 +15,10 @@
 # story.txt - 290
 # story2.txt - 326
 # glasses.txt - 210
+filename = input("Enter the filename: ")
+
+with open(filename, "r") as infile :
+    content = infile.read()
+words = content.split()
+word_count = len(words)
+print(word_count)
