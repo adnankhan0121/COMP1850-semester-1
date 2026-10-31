@@ -8,6 +8,7 @@ class Person:
     """
 
     def __init__(self, name, birth):
+        """Create a Person with the given name and date of birth."""
         if not isinstance(name, str):
             raise TypeError("name must be a string")
         if name == "":
