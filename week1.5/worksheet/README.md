@@ -1,5 +1,4 @@
 # COMP1850 Worksheet 1.5
-
 For this worksheet, you will need to implement two Python classes in files
 `rect.py` and `person.py` and then upload these files to Gradescope.
 

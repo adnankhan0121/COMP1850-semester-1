@@ -8,10 +8,21 @@ class Rectangle:
         """
         Creates a Rectangle, given values for width and height.
         """
-        # Add code here to check type and value of provided width & height,
-        # raising appropriate exceptions if necessary (see README.md)
+        if not isinstance(width, int) or not isinstance(height, int):
+            raise TypeError("width and height must be integers")
+        if width <= 0 or height <= 0:
+            raise ValueError("width and height must be greater than 0")
         self.width = width
         self.height = height
 
-    # Implement methods is_square(), area() & perimeter() here
-    # (See README.md for details of what they should do)
+    def is_square(self):
+        """Return True if the rectangle is a square, False otherwise."""
+        return self.width == self.height
+
+    def area(self):
+        """Return the area of the rectangle."""
+        return self.width * self.height
+
+    def perimeter(self):
+        """Return the perimeter of the rectangle."""
+        return 2 * (self.width + self.height)
